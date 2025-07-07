@@ -1,0 +1,282 @@
+/* ===== RESET + BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color:#f4f4f4 ;
+  color: #222222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: url('https://via.placeholder.com/1600x400') center/cover no-repeat;
+  padding: 6rem 1rem;
+  text-align: center;
+  color: #222222;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  background: #00bcd4;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0097a7;
+}
+
+/* ===== SEARCH SECTION ===== */
+.search-section {
+  padding: 1.5rem;
+  background: #eee;
+  text-align: center;
+}
+
+#searchBox {
+  width: 60%;
+  max-width: 500px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ===== PRODUCTS ===== */
+.products-section {
+  padding: 2rem 0;
+}
+
+.products-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.product p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.product button {
+  padding: 0.5rem 1rem;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product button:hover {
+  background: #007e8b;
+}
+
+/* ===== CART ===== */
+.cart-section {
+  background: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 2px solid #00bcd4;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+#cartItems li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cartItems button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===== CHECKOUT ===== */
+.cart-summary {
+  text-align: right;
+  font-weight: bold;
+}
+
+#checkoutBtn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+#checkoutBtn:hover {
+  background: #388e3c;
+}
+
+/* ===== LOGIN ===== */
+.auth-section {
+  background: #f0f0f0;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.auth-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.auth-section form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-section input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-section button {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-section button:hover {
+  background: #0097a7;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #searchBox {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
